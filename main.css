@@ -1,0 +1,127 @@
+body {
+  background-color: #faf8ef;
+  display: flex;
+  justify-content: center;
+  font-family: "Clear Sans", "Helvetica Neue";
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 0.7;
+  color: #776E65;
+  margin: 0px;
+}
+
+.container {
+  width: 468px;
+  margin-top: 50px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+a.ver1.btn, a.ver2.btn, a.newgame.btn{
+  width: 150px;
+  height: 20px;
+  border-width: 0px;
+  background-color: #f5953b;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+a.ver1.btn:hover, a.ver2.btn:hover, a.newgame.btn:hover{
+  cursor: pointer;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 456px;
+  height: 456px;
+  background-color: #BBADA0;
+  border: 7px solid #BBADA0;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.grid .cell {
+  width: 100px;
+  height: 100px;
+  margin: 7px;
+  border-radius: 3px;
+  background-color: #EEE4DA;
+  color: #afa192;
+  font-weight: bold;
+  text-align: center;
+  font-size: 60px;
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid .cell p {
+  margin: 10px;
+}
+
+.grid .result-board {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 456px;
+  height: 456px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  visibility: hidden;
+}
+
+.grid #result {
+  width: 250px;
+  height: 100px;
+  position: fixed;
+  margin: 175px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  visibility: hidden;
+  color: white;
+  font-weight: 200;
+}
+
+.score-container,
+.bestscore-container {
+  text-align: center;
+  width: 70px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #8f7a66;
+  color: #FFFFFF;
+}
+
+.bestscore-container {
+  margin-left: -150px;
+}
+
+#score,
+#bestscore {
+  font-size: 28px;
+}
+
+.score-title {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}

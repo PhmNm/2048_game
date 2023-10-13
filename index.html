@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2048 Game Online</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="script_v1.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>2048</h1>
+            <div class="score-container">
+                <div class="score-title">score</div>
+                <span id="score">0</span>
+            </div>
+            <div class="bestscore-container">
+                <div class="score-title">best</div>
+                <span id="bestscore">0</span>
+            </div>
+        </div>
+        <div class="buttons">
+            <a class="ver1 btn" href="index.html">Version 1</a>
+            <a class="ver2 btn" href="index_2.html">Version 2</a>
+            <a class="newgame btn" onclick="restart()">New Game</a>
+        </div>
+
+        <div class="grid">
+
+            <div class="result-board">
+                <p id="result">result</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
